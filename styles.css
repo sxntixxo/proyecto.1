@@ -1,0 +1,264 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.menu-bar {
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.menu-bar button {
+    background: none;
+    border: none;
+    color: orange;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 60px;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+tbody tr td {
+    text-align: center;
+    padding: 10px;
+    word-wrap: break-word;
+}
+.circle {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid red;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+}
+.add-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.profile-container {
+    position: relative;
+    right: 50px;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 20%;
+    transform: translateX(-50%);
+    background: #d3d3d3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    text-align: center;
+}
+.popup img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* Mostrar el popup cuando se pase el mouse por encima */
+.profile-container:hover .popup {
+    display: block;
+}
+/* Pagina de añadir */
+.container1 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin-top: 150px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.row {
+    display: flex;
+    gap: 40px;
+}
+.row input {
+    flex: 1;
+}
+.button {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+.button:hover {
+    background-color: darkorange;
+}
+/* Pagina de eliminar */
+.title {
+    background: #d3d3d3;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #d3d3d3;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+}
+.search-bar img {
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.delete-btn {
+    background: orange;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+.delete-btn:hover {
+    background: darkorange;
+}
+.button:hover {
+    background-color: darkorange;
+}
+/* Pagina de reportar */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.input-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.input-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+.button:hover {
+    background-color: darkorange;
+}
+/* Pagina de ayuda */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+.button:hover {
+    background-color: darkorange;
+}
+
